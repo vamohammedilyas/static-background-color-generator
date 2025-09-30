@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.controls label {
+    font-weight: bold;
+}
+
+.controls input[type="color"] {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.controls button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff704d;
+    color: white;
+    transition: 0.3s;
+}
+
+.controls button:hover {
+    background-color: #e65c3c;
+}
+
+.preview {
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background: linear-gradient(to right, #ff0000, #0000ff);
+}
+
+.css-output {
+    display: flex;
+    gap: 10px;
+}
+
+.css-output input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.css-output button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.css-output button:hover {
+    background-color: #218838;
+}
+
+@media(max-width: 500px) {
+    .controls {
+        gap: 10px;
+    }
+}
